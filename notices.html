@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="星渊世界 - 个人技术博客与随笔">
-  <title>星渊世界</title>
+  <meta name="description" content="星渊世界 - 公告列表">
+  <title>公告 - 星渊世界</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-notices">
 
-  <!-- 顶部导航栏 -->
+  <!-- 顶部导航栏（与首页一致） -->
   <header class="site-header">
     <div class="header-left">
       <button class="icon-btn menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
@@ -35,47 +35,23 @@
 
   <div class="layout">
 
-    <!-- 左侧边栏（导航由 assets/data/nav.js 渲染，可通过本地管理页 admin.html 编辑） -->
+    <!-- 左侧边栏（与首页一致，导航由 assets/data/nav.js 渲染） -->
     <aside class="sidebar" id="sidebar">
       <nav class="sidebar-nav" id="sidebarNav"></nav>
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- 主内容区 -->
+    <!-- 公告列表区 -->
     <main class="content">
-
-      <!-- 首页两栏栏目：左公告 / 右站点统计 -->
-      <section class="two-col" aria-label="首页栏目">
-        <div class="col">
-          <div class="col-head">
-            <h2 class="col-title"><a href="notices.html" class="col-title-link">公告</a></h2>
-            <a href="notices.html" class="col-more">全部</a>
-          </div>
-          <ul class="list notice-list" id="noticeList"><!-- 首页最多展示 3 条，全部内容在 notices.html 查看 --></ul>
-        </div>
-
-        <div class="col">
-          <div class="col-head">
-            <h2 class="col-title">站点统计</h2>
-          </div>
-          <!-- 统计数据来自 assets/data/stats.js，可通过本地管理页 admin.html 编辑 -->
-          <div class="stats" id="stats"></div>
-        </div>
+      <section class="notice-page">
+        <h1 class="page-title">公告</h1>
+        <ul class="list notice-list" id="noticeList"><!-- 全部公告由 assets/data/notice.js 渲染 --></ul>
       </section>
-
-      <!-- 精选内容栏目（数据来自 assets/data/featured.js，可通过本地管理页 admin.html 编辑） -->
-      <section class="featured" aria-label="精选内容">
-        <h2 class="featured-title">精选内容</h2>
-        <div class="featured-grid" id="featuredList"></div>
-      </section>
-
     </main>
   </div>
 
   <script src="assets/data/nav.js"></script>
   <script src="assets/data/notice.js"></script>
-  <script src="assets/data/stats.js"></script>
-  <script src="assets/data/featured.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

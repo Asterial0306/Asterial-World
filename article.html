@@ -41,38 +41,15 @@
     </aside>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- 文章正文区 -->
+    <!-- 文章正文区（根据 URL 参数 ?id= 动态渲染，数据来自 assets/data/articles.js） -->
     <main class="content article-content">
-
-      <article class="article">
-        <header class="article-header">
-          <h1 class="article-title">这里是文章标题</h1>
-          <div class="article-meta">
-            <time datetime="2026-08-01">2026年8月1日</time>
-            <span class="dot">·</span>
-            <span>技术</span>
-            <span class="dot">·</span>
-            <span>作者：星渊</span>
-          </div>
-        </header>
-
-        <div class="article-body">
-          <!-- 正文占位，发布文章时替换此处内容 -->
-          <p>这里是文章正文。用 Markdown 或 HTML 撰写后替换此占位内容即可。</p>
-          <h2>一级标题示例</h2>
-          <p>段落文字示例：星渊世界是一个简约的个人网站，用于展示文章与随笔。</p>
-          <h3>二级标题示例</h3>
-          <p>支持标题、段落、列表、代码块、引用等常见排版元素。</p>
-          <blockquote>
-            <p>「仰望星空，脚踏实地。」</p>
-          </blockquote>
-        </div>
-      </article>
-
+      <article class="article" id="articleBox"><!-- 由 main.js 渲染 --></article>
     </main>
   </div>
 
   <script src="assets/data/nav.js"></script>
+  <script src="assets/data/articles.js"></script>
+  <script src="assets/js/renderer.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

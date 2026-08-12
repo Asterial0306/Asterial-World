@@ -6,5 +6,10 @@ window.NAV_DATA = [
     "name": "首页",
     "url": "index.html",
     "icon": "home"
+  },
+  {
+    "name": "文章",
+    "url": "articles.html",
+    "icon": "article"
   }
 ];

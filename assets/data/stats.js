@@ -3,7 +3,7 @@
    ============================================================ */
 window.STATS_DATA = {
   "articles": 0,
-  "categories": 4,
-  "visits": 0,
+  "categories": 2,
+  "visits": 1,
   "launchDate": "2026-08-12"
 };
