@@ -1,3 +1,4 @@
 # 本地管理工具（仅本地使用，不上传 GitHub）
 admin.html
 deploy_server.py
+start_deploy_server.bat
